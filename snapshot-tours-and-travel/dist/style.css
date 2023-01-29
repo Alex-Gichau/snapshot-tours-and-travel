@@ -178,32 +178,44 @@ hr {
 
 /* Destinations Page */
 .dest-container {
-  background-color: #2196f3;
   color:black;  
-  align-items: center;
-}
-
-.grid-dest-container {
-  overflow: hidden;
-  display: grid;
-  grid-template-areas: "grid-item grid-item grid-item";
-  gap: 3px;
-  justify-items: center;  
+  padding:10px;
+  background-color: rgb(243, 243, 243);
   
 }
 
-.grid-item {
-  padding:3px;
-  border: 3px solid red;
-  border-radius: 30px;
+.grid-dest-container {
   overflow:hidden;
-  justify-items: center;
-  width:40rem;
-  height:30rem;
+  display: inline-grid;
+  grid-template-areas: "auto auto auto auto auto";
+  gap: 3px;
+  margin:15px;
+  justify-items: center;  
+  height:fit-content;
+}
+
+.grid-dest {
+  border: 3px solid red;
+  border-radius: 0 30px 0 30px;
+  overflow:hidden;
+  margin:10px;   
+
 }
 
 .image-grid-dest {
-  width:41rem;
   border-radius:0 0 20px 20px;
-  height:22rem;
+  height:14.2rem;
 }
+
+ .fa-ul {
+  display:grid;
+  grid-template-areas:"fa-fire fa-home fa-circle-0";
+  gap:3px;
+ }
+
+ .paragraph-format {
+  display: inline-block;
+  overflow:hidden;
+  
+  
+ }
