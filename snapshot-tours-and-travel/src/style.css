@@ -1,0 +1,177 @@
+body {
+  font-family: ubuntu;
+  background: white;
+  color: black;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1551098891-7a1c852f6c6b?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzQ3MTUxMDM&ixlib=rb-4.0.3&q=80");
+  min-height: 35rem;
+  border-radius: 0 0 30px 30px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  float: right;
+  position: relative;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .mustard-nav {
+  background-color: #ffdb58;
+  color: #000;
+}
+
+.topnav .mustard-nav:hover {
+  background-color: #333;
+  color: white;
+  transition: 0.4s;
+}
+
+.topnav a:hover {
+  background-color: #ffdb58;
+  color: #333;
+  transition: 0.4s;
+}
+
+/* Mid Wrapper */
+.mid-wrapper {
+  width: 90%;
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  top: 32rem;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 10px 18px #9989;
+}
+
+hr {
+  width: 90%;
+}
+
+.option-1,
+.option-2,
+.option-3 {
+  text-align: left;
+  padding: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "option-1 option-2 option-3";
+  gap: 3px;
+  justify-items: center;
+}
+
+.grid-container > div {
+  padding: 0 20px 20px 20px;
+  width: 80%;
+  margin-left: 10%;
+  align: center;
+}
+
+.dest-selector {
+  display: block;
+  min-height: 35px;
+  background-color: #cbe7ff;
+  border-radius: 5px;
+  border: 1px solid #2196f3;
+  outline: none;
+  padding: 0 10px;
+  cursor: pointer;
+  margin-top: 5px;
+  width: 60%;
+}
+.counter-label {
+  display: block;
+  float: left;
+}
+
+.counter-label > input {
+  padding: 8px;
+  margin-right: 10px;
+  margin-top: 5px;
+  background-color: #cccc;
+  border-radius: 5px;
+  border: 1px solid #2196f3;
+}
+
+.dest-selector,
+.counter-label ::focus {
+  background-color: #cbe7ff;
+  border-radius: 5px;
+  border: 3px solid #2196f3;
+}
+
+.btn-submit {
+  padding: 10px;
+  margin: 3px;
+  width: 45%;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background-color: darkblue;
+  color: white;
+}
+
+.btn-submit:hover {
+  box-shadow: 0px 10px 15px 10px #ccc;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #ffdb58;
+  color: #000;
+}
+
+.footer {
+  /*   background-color:#ccc; */
+  padding: 20px;
+  margin-top: 6rem;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-areas: "contact learn-more-btn email";
+  gap: 3px;
+  justify-items: center;
+}
+
+.grid-footer > span {
+  width: 100%;
+}
