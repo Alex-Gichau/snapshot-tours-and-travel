@@ -36,7 +36,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: 'snapshot-tours-and-travel/src/index.html'
+          path: 'https://github.com/Alex-Gichau/snapshot-tours-and-travel/blob/626b9adf8728ae64f13021e6d884cfed83fe6a49/snapshot-tours-and-travel/src/index.html'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
